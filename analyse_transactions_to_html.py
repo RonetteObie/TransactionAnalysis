@@ -44,7 +44,7 @@ Comprehensive analysis
 import pandas as pd #data modeling, data analysis and data manipulation
 import numpy as np # makes code more readable
 import re # check if a particular string matches a given regular expression
-!pip install mlxtend # This is to run the Assosiation Rule
+#!pip install mlxtend # This is to run the Assosiation Rule
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori, association_rules
 from mlxtend.frequent_patterns import fpgrowth
@@ -168,7 +168,7 @@ rules_all['consequents'] = rules_all['consequents'].apply(lambda x: ', '.join(x)
 
 """##5. Promising Combos"""
 
-pip install --upgrade mlxtend
+#pip install --upgrade mlxtend
 
 # Run the fpgrowth algorithm to find frequent itemsets
 frequent_itemsets = fpgrowth(df_transactions, min_support=0.0002, use_colnames=True)
