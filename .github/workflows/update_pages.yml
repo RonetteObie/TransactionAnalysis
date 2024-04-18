@@ -21,12 +21,12 @@ jobs:
         pip install pandas mlxtend openpyxl
 
     - name: Run script to generate HTML
-      run: https://colab.research.google.com/drive/1_57vguHzBhhCOoc3ab47YVt9x_SimKkS#scrollTo=tPjAm__-HtzT
+      run: analyse_transactions_to_html.py
 
     - name: Commit and push if changes
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email ronetteoberholzer@gmail.com
+        git config --global user.name Ronette
         git add -A
         git diff --staged --quiet || git commit -m "Update HTML report"
         git push
