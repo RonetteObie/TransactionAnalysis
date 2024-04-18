@@ -49,7 +49,7 @@ from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori, association_rules
 from mlxtend.frequent_patterns import fpgrowth
 
-!pip install openpyxl #To be able to Export to Excel
+#!pip install openpyxl #To be able to Export to Excel
 
 import warnings # Ignor uncessary warnings to code
 warnings.filterwarnings('ignore')
