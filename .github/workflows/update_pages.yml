@@ -16,11 +16,11 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pandas mlxtend openpyxl
-        - name: Install mlxtend
-          run: pip install mlxtend
+      run: pip install pandas numpy mlxtend openpyxl
+
+    - name: Run the Python script
+      run: python analyse_transactions_to_html.py
+
 
     - name: Run script to generate HTML
       run: python analyse_transactions_to_html.py
