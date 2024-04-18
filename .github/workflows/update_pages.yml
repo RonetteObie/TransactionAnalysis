@@ -20,11 +20,11 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
     - name: Run the Python script
-      run: python analyse_transactions_to_html.py
+      run: python analyse_transactions_to_html (1).py
 
 
     - name: Run script to generate HTML
-      run: python analyse_transactions_to_html.py
+      run: python analyse_transactions_to_html (1).py
     - name: Commit and push if changes
       run: |
         git config --global user.email "ronetteoberholzer@gmail.com"
