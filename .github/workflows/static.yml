@@ -16,19 +16,18 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: pip install pandas numpy mlxtend openpyxl
-    - name: Install dependencies
-      run: pip install -r requirements.txt
-    - name: Run the Python script
-      run: python analyse_transactions_to_html.py
-
+      run: |
+        - name: Install dependencies
+          run: pip install -r requirements.txt
 
     - name: Run script to generate HTML
-      run: python analyse_transactions_to_html.py
+      run: python your_script.py
+
     - name: Commit and push if changes
       run: |
-        git config --global user.email "ronetteoberholzer@gmail.com"
-        git config --global user.name "RonetteObiez"
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
         git add -A
         git diff --staged --quiet || git commit -m "Update HTML report"
         git push
+
